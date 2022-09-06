@@ -1,0 +1,38 @@
+Para crear un proyecto con Vite js primero en consola entrar:
+
+  -> npm create vite@latest    // dentro de la carpeta en la que se quiera crear el proyecto, seleccionar el framework React y el nombre del proyecto
+
+Dentro de la carpeta del proyecto instalar las dependencias, ejecutando: 
+
+  -> npm install
+
+para ejecutar el proyecto usar:
+
+  -> npm run dev        // para correr el servidor de desarrollo
+
+-----------------------------------------------------------------------------
+1) Instalar tailwindcss como plugin de PostCss:
+
+-> npm install -D tailwindcss postcss autoprefixer
+
+2) Iniciar tailwindcss: 
+
+-> npx tailwindcss init
+
+3) Crear archivo  'postcss.config.js'  en la carpeta principal del proyecto.
+
+4) Agregar como plugin tailwindcss y autoprefixer en el archivo de configuracion de postcss.config.js
+
+5) Configurar la ruta de los archivos que contienen las clases tailwind en el archivo tailwind.config.js
+
+6) Agregar las directivas tailwind al archivo css:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+7) Ejecutar el build del proyecto
+
+-> npm run build
+
+

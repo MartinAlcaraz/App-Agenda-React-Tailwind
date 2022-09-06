@@ -1,0 +1,71 @@
+
+body {
+    background-color: #404040;
+}
+
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: xx-large;
+    background-color: darkslateblue;
+}
+
+h2{
+    font-size: x-large;
+    text-decoration: underline;
+    margin-left: 1rem;
+}
+
+p{
+    margin: 0.5rem;
+}
+
+.card{
+    border-radius: 7px;
+    background-color: teal;
+    display: inline-block;
+    width: 50%;
+    margin: 0.5rem;
+}
+
+input{
+    border-radius: 10px;
+    background-color: teal;
+    color: aliceblue;
+    display: block;
+    width: 40%;
+    height: 2rem;
+    font-size: medium;
+    margin: 0.5rem 2rem;
+}
+
+input::placeholder{
+    color: #bbb;
+}
+
+textarea{
+    border-radius: 10px;
+    background-color: teal;
+    color: aliceblue;
+    display: block;
+    width: 40%;
+    height: 2rem;
+    font-size: large;
+    margin: 0.5rem 2rem;
+    resize: none;
+}
+
+textarea::placeholder{
+    color: #bbb;
+}
+
+button{
+    border-radius: 10px;
+    background-color: darkslateblue;
+    color: aliceblue;
+    display: block;
+    width: 50%;
+    height: 2rem;
+    font-size: medium;
+    margin: 0.5rem auto;
+}

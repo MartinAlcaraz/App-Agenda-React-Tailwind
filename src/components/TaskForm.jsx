@@ -16,17 +16,17 @@ function TaskForm() {
     }
 
     return (
-        <div className='p-4 m-2 bg-gradient-to-r from-cyan-800 to-cyan-500 w-3/4 rounded-md border-solid border-2 border-gray-800'>
+        <div className='p-4 mb-2 bg-gradient-to-r from-cyan-800 to-cyan-500 w-auto rounded-md border-solid border-2 border-gray-800'>
             <form onSubmit={handlerSubmit}>
                 <input placeholder="Escriba una tarea" type="text"
                     onChange={(e) => setTexto(e.target.value)} value={texto} 
-                    className="p-4 mx-auto my-2 w-full rounded-md border-solid">
+                    className="p-2 sm:p-4 sm:mx-auto my-2 w-full rounded-md border-solid" required>
                 </input>
                 <textarea placeholder='Escriba una descripcion' onChange={(e) => setDescripcion(e.target.value)}
                     value={descripcion} 
-                    className="p-4 mx-auto my-2 w-full rounded-md border-solid">
+                    className="p-2 sm:p-4 sm:mx-auto my-2 w-full rounded-md border-solid resize-none" required >
                 </textarea>
-                <button className="px-4 py-2 mx-auto my-2 w-1/2 bg-gradient-to-r from-cyan-400 to-cyan-700 rounded-md border-solid">
+                <button className= "btn-primary">
                     Agregar tarea</button>
             </form>
         </div>

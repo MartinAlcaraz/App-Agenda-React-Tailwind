@@ -8,10 +8,10 @@ function TaskCard({ tarea }) {
     return (
     <div className="card">
         <div>
-            <h2> {tarea.nombre}</h2>
-            <p> {tarea.descripcion}</p>
+            <h2 className='font-bold capitalize'> {tarea.nombre}</h2>
+            <p className='first-letter:capitalize break-words'> {tarea.descripcion}</p>
         </div>
-        <button onClick={()=> deleteTask(tarea.id)}>Eliminar tarea</button>
+        <button className='btn-primary px-3 py-1' onClick={()=> deleteTask(tarea.id)}>Eliminar tarea</button>
     </div>
     )
 }
